@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web3 DApp</title>
+    <script src="https://cdn.jsdelivr.net/npm/web3/dist/web3.min.js"></script>
+</head>
+<body>
+    <h1>Web3 DApp with MetaMask</h1>
+
+    <!-- Sección 1: Conexión con MetaMask -->
+    <button id="connectButton">Connect to MetaMask</button>
+    <p id="walletAddress">Not connected</p>
+
+    <!-- Sección 2: Funciones del contrato -->
+    <h2>Contract Functions</h2>
+
+    <!-- Ejemplo: Ver el balance de un usuario -->
+    <div>
+        <h3>Check Balance Of</h3>
+        <input type="text" id="addressInput" placeholder="Enter address" />
+        <button id="checkBalanceButton">Check Balance</button>
+        <p id="balanceOutput"></p>
+    </div>
+
+    <!-- Ejemplo: Llamar a la función openBox -->
+    <div>
+        <h3>Open Box</h3>
+        <button id="openBoxButton">Open Box</button>
+    </div>
+
+    <!-- Sección de scripts -->
+    <script src="script.js"></script>
+</body>
+</html>
