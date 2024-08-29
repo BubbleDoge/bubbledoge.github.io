@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mensajería Blockchain</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Asegúrate de tener el archivo CSS -->
+</head>
+<body>
+    <!-- Página de Login -->
+    <div class="login-page" id="loginPage">
+        <div class="login-container">
+            <h1>Iniciar sesión</h1>
+            <button id="connectBtn">Conectar con MetaMask</button>
+        </div>
+    </div>
+
+    <!-- Página principal -->
+    <div class="main-page" id="mainPage" style="display: none;">
+        <div class="sidebar">
+            <div class="header">
+                <h2>Contactos</h2>
+                <button id="addContactBtn">Agregar Contacto</button>
+            </div>
+            <div id="contactList" class="contact-list"></div>
+        </div>
+
+        <div class="chat-area">
+            <div class="chat-header">
+                <div>
+                    <h2 id="contactNameHeader"></h2>
+                    <span id="contactAddressHeader"></span>
+                </div>
+                <button id="backBtn">Atrás</button>
+            </div>
+            <div class="chat-page" style="display: none;">
+                <div id="chatMessages" class="chat-messages"></div>
+            
+            <div class="chat-input">
+                <input type="text" id="message" placeholder="Escribe un mensaje">
+                <button id="sendMessageBtn">Enviar</button>
+            </div>
+        </div>
+
+        <!-- Formulario para agregar contactos -->
+        <div class="add-contact" id="contactForm" style="display: none;">
+            <h2>Agregar Contacto</h2>
+            <input type="text" id="contactName" placeholder="Nombre del contacto">
+            <input type="text" id="contactAddress" placeholder="Dirección de Ethereum">
+            <button id="submitContactBtn">Guardar</button>
+            <button id="cancelContactBtn">Cancelar</button>
+        </div>
+    </div>
+
+    <!-- Loading Spinner -->
+    <div class="loading" id="loading" style="display: none;">
+        <div class="spinner"></div>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/web3@1.6.0/dist/web3.min.js"></script> <!-- Versión correcta de Web3.js -->
+    <script src="app.js"></script>
+</body>
+</html>

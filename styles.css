@@ -1,0 +1,191 @@
+/* Estructura principal */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* Contenedor principal */
+.container {
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+
+/* Sidebar de contactos */
+.sidebar {
+    width: 250px;
+    background-color: #f8f8f8;
+    border-right: 1px solid #ddd;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+/* Cabecera de contactos */
+.sidebar .header {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    background-color: #fff;
+}
+
+/* Lista de contactos */
+.contact-list {
+    flex: 1;
+    overflow-y: auto;
+}
+
+/* Contacto individual */
+.contact {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+/* Contador de mensajes */
+.message-count {
+    background-color: #25d366;
+    color: #fff;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+}
+
+/* Área de chat */
+.chat-area {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Encabezado del chat */
+.chat-header {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Contenedor de mensajes */
+#chatMessages {
+    flex: 1;
+    overflow-y: auto;
+    padding: 10px;
+    background-color: #e5ddd5;
+}
+
+/* Mensajes */
+.message {
+    margin-bottom: 10px;
+    padding: 8px;
+    border-radius: 8px;
+}
+
+.enviado {
+    text-align: right;
+    background-color: #dcf8c6;
+    align-self: flex-end;
+}
+
+.recibido {
+    text-align: left;
+    background-color: #fff;
+    align-self: flex-start;
+}
+
+/* Tiempo de mensaje */
+.timestamp {
+    font-size: 12px;
+    color: #888;
+}
+
+/* Área de entrada de mensaje */
+#messageInput {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-top: 1px solid #ddd;
+    background-color: #fff;
+}
+
+/* Campo de mensaje */
+#message {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+/* Botón de enviar mensaje */
+#sendMessageBtn {
+    margin-left: 10px;
+    padding: 10px 20px;
+    background-color: #25d366;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Estilos generales para la notificación */
+.notification {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    background-color: #25d366;
+    color: #fff;
+    padding: 10px;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Página de registro/inicio de sesión */
+.login-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f8f8f8;
+}
+
+.login-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+}
+
+.login-container h1 {
+    margin-bottom: 20px;
+}
+
+.login-container input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.login-container button {
+    padding: 10px;
+    background-color: #25d366;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+}
